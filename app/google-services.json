@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "515617451710",
+    "firebase_url": "https://swachataapp.firebaseio.com",
+    "project_id": "swachataapp",
+    "storage_bucket": "swachataapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515617451710:android:12e041a638df885e",
+        "android_client_info": {
+          "package_name": "com.swachataapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515617451710-eit48pghq5mn0urap4btsntapr0fphb6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swachataapp",
+            "certificate_hash": "f860b36da21d0d5172828fd1251cca8f8a7a8498"
+          }
+        },
+        {
+          "client_id": "515617451710-hfivej0ros8fm7v5n28fcfqt5falptg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_w16KINp9hyjo5sTlu_g4GaCdCENgfCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515617451710-hfivej0ros8fm7v5n28fcfqt5falptg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
