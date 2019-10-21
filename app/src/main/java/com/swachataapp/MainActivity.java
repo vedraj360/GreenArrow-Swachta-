@@ -48,7 +48,7 @@ import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
-    Toolbar toolbar;
+    private Toolbar toolbar;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     private StorageReference storageReference;
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.main_layout_Toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.app_name);
-        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+       
         auth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
         circleImageView = findViewById(R.id.image);
@@ -293,13 +293,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void previewCapturedImage() {
         try {
-            // hide video preview
-            //  videoPreview.setVisibility(View.GONE);
-
-            //  imgPreview.setVisibility(View.VISIBLE);
-
-            // bimatp factory
-            BitmapFactory.Options options = new BitmapFactory.Options();
+            
+               BitmapFactory.Options options = new BitmapFactory.Options();
 
             // downsizing image as it throws OutOfMemory Exception for larger
             // images
@@ -309,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
                     options);
 
 
-            // imgPreview.setImageBitmap(bitmap);
+    
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
